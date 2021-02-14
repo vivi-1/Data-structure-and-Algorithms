@@ -1,5 +1,4 @@
-#Chapter 3
-"""
+Chapter 3
 Q1: function​ isLeapYear(year) {
 ​ 	  ​return​ (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
     }
@@ -21,11 +20,11 @@ Q3: O(logN)
 Q4: O(N)
 Q5: O(1)
 
-"""
 
 
-#Chapter 4
-"""
+
+Chapter 4
+
 Q1: 100 100 7 10000
     2000 2000 11 4000000
 
@@ -40,12 +39,16 @@ Q4:
         gv < i:
         gv = i
 ​ 	 return​ gv;
-"""
-
-
-#Chapter 5
-"""
 
 
 
-"""
+Chapter 5
+Q1: O(N)
+Q2: O(N^2)
+Q3: O(N)
+Q4: O(N)
+Q5: O(N^2)
+
+
+Chapter 6
+Q1: 
