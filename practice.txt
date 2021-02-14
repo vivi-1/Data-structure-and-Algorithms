@@ -57,19 +57,18 @@ Q3:
   best: O(1)
   average: O(N^2)
   worst: O(N^2)
-  Expression: Only the last elements can be added to 10. So N * N = N^2
-  (N as the amount of elements)
+  Expression: No two elements can be added to 10. So we need to go through all
+  the elements in the two arrays:  N * N = N^2 (N as the amount of elements)
 Q4: O(N)
 modification:
 function​ containsX(string) {
-​ 	  foundX = ​false​;
 ​ 	  ​for​(​let​ i = 0; i < string.length; i++) {
 ​ 	    ​if​ (string[i] === ​"X"​) {
-​ 	      foundX = ​true​;
+​ 	      return ​true​;
           break;
 ​ 	    }
 ​ 	  }
-​ 	  ​return​ foundX;
+​ 	  ​return​ false;
 ​ 	}
 
 
