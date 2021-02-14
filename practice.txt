@@ -51,5 +51,30 @@ Q5: O(N^2)
 
 
 Chapter 6
+Q1: O(N2)
+Q2: O(N)
+Q3:
+  best: O(1)
+  average: O(N^2)
+  worst: O(N^2)
+  Expression: Only the last elements can be added to 10. So N * N = N^2
+  (N as the amount of elements)
+Q4: O(N)
+modification:
+function​ containsX(string) {
+​ 	  foundX = ​false​;
+​ 	  ​for​(​let​ i = 0; i < string.length; i++) {
+​ 	    ​if​ (string[i] === ​"X"​) {
+​ 	      foundX = ​true​;
+          break;
+​ 	    }
+​ 	  }
+​ 	  ​return​ foundX;
+​ 	}
+
+
+Chapter 7
 Q1:
-Q2: 
+Q2:
+Q3:
+Q4:
