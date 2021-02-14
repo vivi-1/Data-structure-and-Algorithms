@@ -73,8 +73,15 @@ function​ containsX(string) {
 
 
 Chapter 7
-Q1:
+Q1: O(N)
+Q2: O(N)
+Q3: O(N^2)
+Q4: O(N^3)
+Q5: O(logN)
 
+
+Chapter8
+Q1:
 Q2:
 Q3:
 Q4:
