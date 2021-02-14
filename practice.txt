@@ -24,3 +24,29 @@ Q4: O(N)
 Q5: O(1)
 
 """
+
+
+#Chapter 4
+"""
+Q1: 100 100 7 10000
+    2000 2000 11 4000000
+
+Q2: 16
+
+Q3: O(N^2)
+
+Q4:
+ def​ ​greatestNumber​(array):
+    gv=array[0]
+​ 	 for i in array:
+        gv < i:
+        gv = i
+​ 	 return​ gv;
+"""
+
+
+#Chapter 5
+"""
+
+
+"""
