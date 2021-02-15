@@ -1,27 +1,32 @@
 #!/usr/bin/python
 
 #Q1:
-arrlib1 = {1: True, 2: True, 3: True, 4: True, 5: True}
-def intersection(arr):
+def intersection(arr1, arr2):
+    arrlib = {}
     result = []
-    for x in arr:
-        if arrlib1[x] == True:
-            result.append(x)
+    for x in arr1:
+        arrlib[x] = True
+    for y in arr2:
+        if arrlib[y] == True:
+            result.append(y)
     print (result)
 arr1 = [0, 2, 4, 6, 8]
-intersection(arr1)
+arr2 = [[1, 2, 3, 4, 5]]
+intersection(arr1, arr2)
 
 #Q2:
-arrlib2 = {'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f':0}
-arrlib_temp
 def fdup(arr):
+    arrlib = {}
     for x in arr:
-        arrlib2[x] += 1
-        if arrlib2[x] > 1:
+        if arrlib[x] != True:
+            arrlib[x] = True
+        if arrlib[x] == True:
             print(x)
             break
-arr2 = ['a', 'b', 'c', 'd', 'c', 'e', 'f']
-fdup(arr2)
+arr3 = ['a', 'b', 'c', 'd', 'c', 'e', 'f']
+fdup(arr3)
+
+
 
 #Q3:
 arrlib3 = {'a':True, 'b':True, 'c':True, 'd':True, 'e':True, 'f':True, 'h':True, 'i':True, 'j':True, 'k':True, 'l':True, 'm':True, 'n':True, 'o':True, 'p':True, 'q':True, 'r':True, 's':True, 't':True, 'u':True, 'v':True, 'w':True, 'x':True, 'y':True, 'z':True}
@@ -35,10 +40,10 @@ str1 = "the quick brown box jumps over a lazy dog"
 fmiss(str1)
 
 #Q4:
-arrlib4 = {'a':0, 'b':0, 'c':0, 'd':0, 'e':0, 'f':0, 'h':0, 'i':0, 'j':0, 'k':0, 'l':0, 'm':0, 'n':0, 'o':0, 'p':0, 'q':0, 'r':0, 's':0, 't':0, 'u':0, 'v':0, 'w':0, 'x':0, 'y':0, 'z':0}
 def fndup(str):
+    arrlib = {}
     for x in str:
-        arrlib4[x] += 1
+        arrlib[x] += 1
     for x in str:
         if arrlib4[x] == 1:
             print (x)
