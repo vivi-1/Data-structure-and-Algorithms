@@ -31,7 +31,6 @@ fdup(arr3)
 
 
 #Q3:
-arrlib3 = {'a':True, 'b':True, 'c':True, 'd':True, 'e':True, 'f':True, 'h':True, 'i':True, 'j':True, 'k':True, 'l':True, 'm':True, 'n':True, 'o':True, 'p':True, 'q':True, 'r':True, 's':True, 't':True, 'u':True, 'v':True, 'w':True, 'x':True, 'y':True, 'z':True}
 def fmiss(str):
     result = []
     arrlib= {}
