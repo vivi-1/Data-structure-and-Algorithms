@@ -137,3 +137,23 @@ def fndup(str):
             break
 str2 = "minimum"
 fndup(str2)
+
+
+Chapter 9
+Q1: I will do FIFO which is a queue
+Q2: 6 and 5
+Q3: 3
+Q4:
+def rev(str):
+    temp1 = []
+    temp2 = []
+    for x in str:
+        temp1.append(x)
+    for i in range(0, len(str)):
+        temp2.append(temp1.pop())
+    print(temp2)
+word = "abcde"
+rev(word)
+
+
+Chapter 10
