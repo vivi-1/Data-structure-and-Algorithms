@@ -208,13 +208,10 @@ print(tranN(6))
 
 Q4:
 def xindex(str):
-    if len(str) == 1:
+    if str[0] == 'x':
         return 0
     else:
-        if str[0] == 'x':
-            return 0
-        else:
-            return 1 + xindex(str[1:len(str)])
+        return 1 + xindex(str[1:len(str)])
 print(xindex("abcdefghijklmnopqrstuvwxyz"))
 
 
