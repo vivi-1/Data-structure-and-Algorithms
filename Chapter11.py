@@ -28,7 +28,6 @@ def tranN(n):
         return 1
     else:
         return n + tranN(n-1)
-
 print(tranN(6))
 
 #Q4:
@@ -58,6 +57,4 @@ def shortway(r, c):
         print ("r=1")
         print(shortway(r-1, c-1))
         return 2 + shortway(r-1, c-1)
-
-
 print(shortway(3, 3))
