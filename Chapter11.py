@@ -38,7 +38,6 @@ def xindex(str):
         return 1 + xindex(str[1:len(str)])
 print(xindex("abcdefghijklmnopqrstuvwxyz"))
 
-
 #Q5:
 def shortway(r, c):
     if r == 0 or c == 0:
