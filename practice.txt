@@ -159,11 +159,11 @@ rev(word)
 
 Chapter 10
 Q1: Base case is when low = high +2 (eg.if high = 10, then base case is when low=12)
-Q2: if n is an even number, it will be indefinite because it will miss the base case that n===1 will not happen
+Q2: if n is an even number, it will be indefinite because it will miss the base case since n===1 will not happen
 Q3:
 ​def​ ​sum​(low, high)
 ​ 	  ​return​ high + sum(low, high - 1)
-     return low if (high-1) === low
+     return low if high == low
 ​ 	​end​
 Q4:
 def print_mix(arr):
