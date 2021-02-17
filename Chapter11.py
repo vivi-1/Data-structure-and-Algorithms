@@ -41,7 +41,6 @@ print(xindex("abcdefghijklmnopqrstuvwxyz"))
 #Q5:
 def shortway(r, c):
     if r == 0 or c == 0:
-        print ("r=0=c")
         return 0
     if r == 1 == c:
         return 0
@@ -50,7 +49,5 @@ def shortway(r, c):
     if r == 1 and c != 1:
         return 1 + shortway(1, c-1)
     if c > 1 and r > 1:
-        print ("r=1")
-        print(shortway(r-1, c-1))
         return 2 + shortway(r-1, c-1)
 print(shortway(3, 3))
