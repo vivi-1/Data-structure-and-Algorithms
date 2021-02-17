@@ -262,3 +262,9 @@ def​ ​unique_paths​(rows, columns, memo{})
 ​ 	  ​end
     return​ memo[[row, columns]]
 ​​end​
+
+Chapter13
+Q1:
+Q2:
+Q3:
+Q4:
