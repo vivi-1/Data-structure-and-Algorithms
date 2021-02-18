@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-#Chapter 12
+#Chapter12
 #Q1:
 def​ ​add_until_100​(array)
 ​ 	  ​return​ 0 ​if​ array.​length​ == 0
