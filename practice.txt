@@ -282,7 +282,7 @@ array4 =  [9, 3, 2, 5, 6, 7, 1, 0, 4]
 print(findMissingNumber(array4))
 
 Q3:Bubble sort as O(N^2) method, Quicksort as O(NlogN) and
-    insertion sort as O(N)
+    insertion sort as O(N^2/2)
 array3 = [11,8,3,4,5,6,7,8,9,10]
 def findGreatestNumber1(arr):
     for i in range(0, len(arr)-1):
