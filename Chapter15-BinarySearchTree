@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+#Chapter15
+#Q3
+class NodeTree:
+    def _init_(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+    def insert(self, data):
+        if self.data:
+            if data <  self.data:
+                if self.left == None:
+                    self.left = NodeTree(data)
+                else:
+                    self.left.insert(data)
+            elif data > self.data:
+                if self.right == None:
+                    self.right = NodeTree(data)
+                else:
+                    self.right.insert(data)
+        else:
+            self.data = data
+    def treePrint(self):
+        if self.left:
+            self.left.treePrint()

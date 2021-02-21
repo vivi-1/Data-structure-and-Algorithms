@@ -401,3 +401,10 @@ class DoublyLinkedList:
             new_node.prev = None
             self.head = new_node
             return
+
+Chapter15
+Q1:   1
+              5
+        2          9
+           4     6   10
+         3         8
