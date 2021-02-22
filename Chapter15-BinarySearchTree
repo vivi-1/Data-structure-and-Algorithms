@@ -3,7 +3,7 @@
 #Chapter15
 #Q3
 class NodeTree:
-    def _init_(self, data):
+    def __init__(self, data):
         self.left = None
         self.right = None
         self.data = data
@@ -24,3 +24,21 @@ class NodeTree:
     def treePrint(self):
         if self.left:
             self.left.treePrint()
+        print(self.data)
+        if self.right:
+            self.right.treePrint()
+    def printGreatestValue(node):
+        if node.right == None:
+            return node.data
+        else:
+            return node.right.printGreatestValue()
+
+list2 = NodeTree(1)
+
+list2.insert(2)
+list2.insert(3)
+list2.insert(4)
+list2.insert(5)
+
+list2.treePrint()
+print(list2.printGreatestValue())
