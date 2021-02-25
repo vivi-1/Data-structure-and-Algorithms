@@ -479,9 +479,7 @@ Min-heap: 2, 10, 22, 34, 55, 68, 99
 Chapter 17
 Q1: tag tank tap today total we well went
 Q2:
-
-Q3:#Chapter 17
-#Q3:
+Q3:
 class TrieNode:
     def __init__(self, char):
         self.char = char
@@ -521,4 +519,3 @@ list3.insert("Kevin")
 list3.insert("want")
 list3.insert("weight")
 list3.traverse(list3.root)
-        
