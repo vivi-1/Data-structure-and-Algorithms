@@ -475,3 +475,50 @@ Q2:
 Q3:
 Max-heap: 99, 68, 55, 34, 22, 10, 2
 Min-heap: 2, 10, 22, 34, 55, 68, 99
+
+Chapter 17
+Q1: tag tank tap today total we well went
+Q2:
+
+Q3:#Chapter 17
+#Q3:
+class TrieNode:
+    def __init__(self, char):
+        self.char = char
+        self.end = False
+        self.counter = 0
+        self.children = {}
+class Trie(object):
+    def __init__(self):
+        self.root = TrieNode("")
+    def insert(self, word):
+        node = self.root
+        for char in word:
+            if char in node.children:
+                node = node.children[char]
+            else:
+                newNode = TrieNode(char)
+                node.children[char] = newNode
+                node = newNode
+        node.children['*'] = None
+        node.end = True
+        node.counter += 1
+    def traverse(self, node):
+        result = []
+        node = self.root
+        for char in node.children:
+            self.traverse(char)
+            result.append(node.children[char])
+            if char == None:
+                result.append('*')
+
+
+list3 = Trie()
+list3.insert("wang")
+list3.insert("Wei")
+list3.insert("yu")
+list3.insert("Kevin")
+list3.insert("want")
+list3.insert("weight")
+list3.traverse(list3.root)
+        
