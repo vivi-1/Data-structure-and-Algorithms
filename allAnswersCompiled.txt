@@ -536,3 +536,8 @@ list3.insert("weight")
 #list3.traverse(list3.root)
 
 print(list3.autocorrection("kw"))
+
+
+Chapter 18
+Q1: nail polish, needles, pins, hammer
+Q2: A-B-E-J-F-O-C-G-K-D-H-L-M-I-N-P
