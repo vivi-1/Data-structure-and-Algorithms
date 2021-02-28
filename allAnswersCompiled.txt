@@ -541,3 +541,24 @@ print(list3.autocorrection("kw"))
 Chapter 18
 Q1: nail polish, needles, pins, hammer
 Q2: A-B-E-J-F-O-C-G-K-D-H-L-M-I-N-P
+Q3: A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P
+Q4:
+def​ bfs​(starting_vertex, search_value)
+​     queue = Queue.​new​
+​
+​     visited_vertices = {}
+​ 	  visited_vertices[starting_vertex.​value​] = ​true​
+​ 	  queue.​enqueue​(starting_vertex)
+​
+​ 	  ​while​ queue.​read​
+​ 	    current_vertex = queue.​dequeue​
+       return current_vertex.value if current_vertex.​value​ == search_value
+​ 	    current_vertex.​adjacent_vertices​.​each​ ​do​ |adjacent_vertex|
+​​ 	      ​if​ !visited_vertices[adjacent_vertex.​value​]
+​​ 	        visited_vertices[adjacent_vertex.​value​] = ​true​
+​​ 	        queue.​enqueue​(adjacent_vertex)
+​ 	      ​end​
+​ 	    ​end​
+​ 	  ​end​
+     return nil
+​ 	​end​
