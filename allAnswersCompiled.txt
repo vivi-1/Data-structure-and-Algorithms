@@ -574,7 +574,8 @@ def reverse(arr):
 
 arr4 = ['a', 'b', 'c', 'd', 'c', 'e']
 reverse(arr4)
-print(arr4)       
+print(arr4)
+
 Q4:
 Version #1:
 Time Complexity: O(N)
@@ -587,3 +588,5 @@ Space Complexity: O(1)
 Version #3:
 Time Complexity: O(N)
 Space Complexity: O(N)
+
+Chapter 20
