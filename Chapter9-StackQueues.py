@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
-#Chapter 9 Q4
+#Chapter9 Q4
 def rev(str):
     temp1 = []
     temp2 = ""

@@ -542,7 +542,7 @@ Chapter 18
 Q1: nail polish, needles, pins, hammer
 Q2: A-B-E-J-F-O-C-G-K-D-H-L-M-I-N-P
 Q3: A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P
-Q4:
+Q4:(Ruby)
 def​ bfs​(starting_vertex, search_value)
 ​     queue = Queue.​new​
 ​
@@ -562,3 +562,28 @@ def​ bfs​(starting_vertex, search_value)
 ​ 	  ​end​
      return nil
 ​ 	​end​
+
+Chapter 19
+Q1: Space complexity O(N)
+Q2: Space complexity O(N)
+Q3:
+def reverse(arr):
+    len1 = len(arr)
+    for i in range(0, int(len1/2)):
+            arr[i], arr[len1-1-i] = arr[len1-1-i], arr[i]
+
+arr4 = ['a', 'b', 'c', 'd', 'c', 'e']
+reverse(arr4)
+print(arr4)       
+Q4:
+Version #1:
+Time Complexity: O(N)
+Space Complexity: O(N)
+
+Version #2:
+Time Complexity: O(N)
+Space Complexity: O(1)
+
+Version #3:
+Time Complexity: O(N)
+Space Complexity: O(N)

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
-#Chapter 10 Q4
+#Chapter10 Q4
 def print_mix(arr):
     for i in arr:
         if isinstance(i, int) == True:
