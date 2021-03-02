@@ -3,6 +3,46 @@
 #Chapter20
 
 #Q1:
+class Athelete:
+    def __init__(self, first_name, last_name, team):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.team = team
+
+def bothTeamPlayers(arr1, arr2):
+    HT = {}
+    result = []
+    for i in arr1:
+        HT[i.first_name + " " + i.last_name] = True
+    for j in arr2:
+        if (j.first_name + " " + j.last_name) in HT.keys():
+            result.append(j.first_name + " " + j.last_name)
+    return result
+
+basketball_players = []
+b1 = Athelete("Jill","Huang","Gators" )
+b2 = Athelete("Janko", "Barton", "Sharks")
+b3 = Athelete("Wanda", "Vakulskas", "Sharks")
+b4 = Athelete("Jill", "Moloney","Gators")
+b5 = Athelete( "Luuk","Watkins", "Gators")
+basketball_players.append(b1)
+basketball_players.append(b2)
+basketball_players.append(b3)
+basketball_players.append(b4)
+basketball_players.append(b5)
+
+football_players = []
+f1 = Athelete("Hanzla","Radosti","32ers")
+f2 = Athelete("Tina", "Watkins", "Barleycorns")
+f3 = Athelete("Alex", "Patel", "32ers")
+f4 = Athelete("Jill", "Huang", "Barleycorns")
+f5 = Athelete("Wanda", "Vakulskas", "Barleycorns")
+football_players.append(f1)
+football_players.append(f2)
+football_players.append(f3)
+football_players.append(f4)
+football_players.append(f5)
+print(bothTeamPlayers(basketball_players, football_players))
 
 #Q2:
 def missingNum(arr):
@@ -82,8 +122,26 @@ def sortTemp(arr):
             arr += v
     return arr
 
-
 tempreture = [98.6, 98.0, 97.1, 99.0, 98.9, 97.8, 98.5, 98.2, 98.0, 97.1]
 print(sortTemp(tempreture))
 
 #Q6:
+def longestConsecutiveLen(arr):
+    HT={}
+    largestCnt = 1
+    for i in arr:
+        HT[i] = True
+    for i in arr:
+        if i - 1 not in HT.keys():
+            tempCnt = 1
+            currentNum = i
+            while currentNum +1 in HT.keys():
+                currentNum += 1
+                tempCnt += 1
+            if tempCnt > largestCnt:
+                largestCnt = tempCnt
+    return largestCnt
+arr8 = [19, 13, 15, 12, 18, 14, 17, 11]
+arr9 = [10, 5, 12, 3, 55, 30, 4, 11, 2]
+print(longestConsecutiveLen(arr8))
+print(longestConsecutiveLen(arr9))
