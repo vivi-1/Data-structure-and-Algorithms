@@ -62,7 +62,25 @@ arr5 = [2, 3, 0, 6, 1, 5]
 print(missingNum(arr5))
 
 #Q3:
+def is_increase(arr, i, j):
+    for k in range(i,j):
+        if arr[k+1] < arr[k]:
+            return False
+    return True
 
+
+def maxProfit(arr):
+    buy_price = arr[0]
+    profit = 0
+
+    for price in arr:
+        temp_profit = price - buy_price
+        if price < buy_price:
+            buy_price = price
+        if temp_profit > profit:
+            profit = temp_profit
+    return profit
+    
 #Q4:
 def maxProduct(arr):
     if len(arr) <= 1:
