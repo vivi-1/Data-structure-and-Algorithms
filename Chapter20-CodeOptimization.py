@@ -80,7 +80,7 @@ def maxProfit(arr):
         if temp_profit > profit:
             profit = temp_profit
     return profit
-    
+
 #Q4:
 def maxProduct(arr):
     if len(arr) <= 1:
